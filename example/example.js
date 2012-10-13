@@ -59,3 +59,65 @@ redmine.deleteIssue(issueId, function(data) {
 
   console.log(data);
 });
+
+// get users
+redmine.getUsers(function(data) {
+   if (data instanceof Error) {
+    console.log("Error: "+data);
+    return;
+  }
+  console.log("Users:");
+  console.log(data);
+});
+
+// create user
+var user = {
+  login: "jplang",
+  firstname: "Jean-Philippe",
+  lastname: "Lang",
+  mail: "jp_lang@test.de",
+};
+redmine.postUser(user, function(data) {
+  if (data instanceof Error) {
+    console.log("Error: " + data);
+    return;
+  }
+  console.log(data);
+});
+
+// update user
+var userId = 93; // exist id
+var userUpdate = {
+  firstname: "Hans",
+  lastname: "Dieter",
+  mail: "hans.dieter@test.eu"
+};
+redmine.updateUser(userId, userUpdate, function(data) {
+  if (data instanceof Error) {
+    //console.log("Error: " + data); FIXME
+    //return;
+  }
+  console.log("User Updated:");
+  console.log(data);
+});
+
+//delte user
+var userId = 93;
+redmine.deleteUser(userId, function(data) {
+  if (data instanceof Error) {
+    //console.log("Error: " + data); FIXME
+    //return;
+  }
+  console.log(data);
+});
+
+// get projects
+redmine.getProjects(function(data) {
+   if (data instanceof Error) {
+    console.log("Error: "+data);
+    return;
+  }
+
+  console.log("Projects:");
+  console.log(data);
+});
