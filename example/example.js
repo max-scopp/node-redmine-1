@@ -121,3 +121,55 @@ redmine.getProjects(function(data) {
   console.log("Projects:");
   console.log(data);
 });
+
+// get project
+var product_id = 30;
+var query = null;
+redmine.getProject(product_id, query, function(data) {
+   if (data instanceof Error) {
+    console.log("Error: "+data);
+    return;
+  }
+
+  console.log("Projects:");
+  console.log(data);
+});
+
+// create project
+var project = {
+  name: "Test",
+  identifier: "test",
+  description: "Testproject"
+};
+redmine.postProject(project, function(data) {
+   if (data instanceof Error) {
+    console.log("Error: "+data);
+    return;
+  }
+  console.log(data);
+});
+
+// update project
+var project = {
+  name: "Test2",
+  identifier: "test2",
+  description: "Testproject2"
+};
+var product_id = 42;
+redmine.updateProject(product_id, project, function(data) {
+   if (data instanceof Error) {
+    // sys.inspect("Error: "+data); // FIXME
+    // return;
+  }
+  console.log(data);
+});
+
+// delete project
+var product_id = 43;
+redmine.deleteProject(product_id, function(data) {
+   if (data instanceof Error) {
+    sys.inspect("Error: "+data); // FIXME
+    return;
+  }
+  console.log(data);
+});
