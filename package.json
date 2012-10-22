@@ -1,10 +1,10 @@
 {
   "name": "redmine",
-  "version": "0.2.3",
+  "version": "0.2.4 by JumpLink",
   "description": "Redmine Rest API Client for node.js",
   "tags": ["redmine"],
   "keywords": ["redmine", "rest api"],
-  "author": "Sotaro KARASAWA <sotarok@crocos.co.jp>",
+  "author": ["Sotaro KARASAWA <sotarok@crocos.co.jp>", "Pascal Garber <pascal.garber@gmail.com>],
   "repository": {
     "type": "git",
     "url": "https://github.com/sotarok/node-redmine.git"
