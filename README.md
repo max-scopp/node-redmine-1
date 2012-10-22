@@ -1,17 +1,18 @@
 node-redmine
 ===============
 
-[![Build Status](https://secure.travis-ci.org/sotarok/node-redmine.png)](http://travis-ci.org/sotarok/node-redmine)
+Redmine REST API Client for node.js.
 
-Redmine REST API Client for node.js
+I use this fork for: https://github.com/JumpLink/redmine-swp-script
 
 
 Features
 ---------
 
 * Issues
-
-(Only Issues API is available now.)
+* Projects
+* Users
+* And maybe some untested stuff
 
 
 Install
@@ -19,7 +20,7 @@ Install
 
 Install from npm:
 
-    $ npm install redmine
+    $ npm install git://github.com/JumpLink/node-redmine.git
 
 
 Link
