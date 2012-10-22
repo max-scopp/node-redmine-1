@@ -4,7 +4,7 @@
   "description": "Redmine Rest API Client for node.js",
   "tags": ["redmine"],
   "keywords": ["redmine", "rest api"],
-  "author": ["Sotaro KARASAWA <sotarok@crocos.co.jp>", "Pascal Garber <pascal.garber@gmail.com>],
+  "author": ["Sotaro KARASAWA <sotarok@crocos.co.jp>", "Pascal Garber <pascal.garber@gmail.com>"],
   "repository": {
     "type": "git",
     "url": "https://github.com/sotarok/node-redmine.git"
