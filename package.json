@@ -1,24 +1,24 @@
 {
   "name": "redmine",
-  "version": "0.2.4 by JumpLink",
-  "description": "Redmine Rest API Client for node.js",
+  "version": "0.2.5",
+  "description": "Redmine Rest API Client for node.js (orignal by nik-kor, forked from JumpLink, fixed by max-scopp)",
   "tags": ["redmine"],
   "keywords": ["redmine", "rest api"],
-  "author": ["Sotaro KARASAWA <sotarok@crocos.co.jp>", "Pascal Garber <pascal.garber@gmail.com>"],
+  "author": ["Maximilian Scopp <me@maxscopp.de>", "Sotaro KARASAWA <sotarok@crocos.co.jp>", "Pascal Garber <pascal.garber@gmail.com>"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sotarok/node-redmine.git"
+    "url": "https://github.com/max-scopp/node-redmine.git"
   },
   "scripts": {
     "test": "TEST_REDMINE_APIKEY=e8a94353d2cbf45e302b08f6069327eeefa2cfb2 TEST_REDMINE_HOST=vivid-winter-3808.heroku.com node_modules/.bin/expresso test/*"
   },
   "bugs": {
-    "url": "https://github.com/sotarok/node-redmine/issues"
+    "url": "https://github.com/max-scopp/node-redmine/issues"
   },
   "license": [
     {
       "type": "MIT",
-      "url": "https://github.com/sotarok/node-redmine/blob/master/LICENSE"
+      "url": "https://github.com/max-scopp/node-redmine/blob/master/LICENSE"
     }
   ],
   "devDependencies": {
