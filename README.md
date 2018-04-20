@@ -1,9 +1,12 @@
-node-redmine
+node-redmine-merged
 ===============
 
 Redmine REST API Client for node.js.
 
-I use this fork for: https://github.com/JumpLink/redmine-swp-script
+This Project uses multiple forks that did not make it in the original NPM Plugins.
+I'm considering to-rewrite it, but that'll do for now.
+
+Original NPM: https://www.npmjs.com/package/redmine
 
 
 Features
@@ -20,7 +23,7 @@ Install
 
 Install from npm:
 
-    $ npm install git://github.com/JumpLink/node-redmine.git
+    $ npm install git://github.com/max-scopp/node-redmine-merged.git
 
 
 Link
